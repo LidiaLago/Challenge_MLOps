@@ -1,0 +1,23 @@
+stages:
+  load_data:
+    cmd: python src/load_data.py
+    deps:
+      - src/load_data.py
+    outs:
+      - data/raw/cancer_dataset.csv
+
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+      - src/preprocess.py
+      - data/raw/cancer_dataset.csv
+    outs:
+      - data/processed/clean_cancer_dataset.csv
+
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed/clean_cancer_dataset.csv
+
+# para ejecutar todo el pipline: dvc repro

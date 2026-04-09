@@ -1,5 +1,0 @@
-outs:
-- md5: 0ea5782e996acd1446e1ab6e7fa0c049
-  size: 49105637
-  hash: md5
-  path: clean_cancer_dataset.csv

@@ -1,0 +1,41 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py
+    deps:
+    - path: src/load_data.py
+      hash: md5
+      md5: ffa47e7d7dfc14d99494d93ead010fc2
+      size: 1038
+    outs:
+    - path: data/raw/cancer_dataset.csv
+      hash: md5
+      md5: c2e04caab6e98387c8283b4c39e321fb
+      size: 49128068
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - path: data/raw/cancer_dataset.csv
+      hash: md5
+      md5: c2e04caab6e98387c8283b4c39e321fb
+      size: 49128068
+    - path: src/preprocess.py
+      hash: md5
+      md5: 79c27f75baebb24ace1a76e2c8a3e564
+      size: 1311
+    outs:
+    - path: data/processed/clean_cancer_dataset.csv
+      hash: md5
+      md5: 0ea5782e996acd1446e1ab6e7fa0c049
+      size: 49105637
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed/clean_cancer_dataset.csv
+      hash: md5
+      md5: 0ea5782e996acd1446e1ab6e7fa0c049
+      size: 49105637
+    - path: src/train.py
+      hash: md5
+      md5: 105d6d05b08e7d8a10e9bfc848bff76e
+      size: 3316

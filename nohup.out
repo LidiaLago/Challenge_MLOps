@@ -1,0 +1,101 @@
+Backend store URI not provided. Using ./mlruns
+Registry store URI not provided. Using backend store URI.
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:343: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, artifact_uri)
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:378: FutureWarning: The filesystem model registry backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri)
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/04/09 16:07:28 WARNING mlflow.server: MLflow job execution requirements not met (MLflow job backend requires a database backend store URI but got ./mlruns). Server will start without job execution support. Errors will be surfaced at job invocation time.
+INFO:     Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:     Started parent process [5490]
+INFO:     Started server process [5493]
+INFO:     Waiting for application startup.
+INFO:     Started server process [5494]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Application startup complete.
+INFO:     Started server process [5492]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [5495]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:343: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, artifact_uri)
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41854 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:343: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, artifact_uri)
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:343: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, artifact_uri)
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41878 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41866 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/mlflow/server/handlers.py:343: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, artifact_uri)
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41854 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41868 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41874 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41894 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41878 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41874 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41866 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:25 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41868 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41866 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41854 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41878 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41868 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41874 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41894 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41894 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41874 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41868 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+2026/04/09 16:08:27 ERROR mlflow.server.handlers: Error in _query_trace_metrics: query_trace_metrics is not supported with FileStore. This feature requires a SQL-based tracking backend (e.g., SQLite, PostgreSQL, MySQL). Please configure MLflow with a SQL backend using --backend-store-uri. For SQLite setup instructions, see: https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/#configure-server. Set MLFLOW_LOGGING_LEVEL=DEBUG for traceback.
+INFO:     127.0.0.1:41866 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41878 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 500 Internal Server Error
+INFO:     Received SIGHUP, restarting processes.
+INFO:     Waiting for child process [5492]
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/multiprocessing/resource_tracker.py:104: UserWarning: resource_tracker: process died unexpectedly, relaunching.  Some resources might leak.
+  warnings.warn('resource_tracker: process died unexpectedly, '
+INFO:     Waiting for child process [5493]
+INFO:     Waiting for child process [5494]
+INFO:     Waiting for child process [5495]
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/home/lidia/miniconda3/envs/challenge_mlops/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+INFO:     Started server process [15321]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15320]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15318]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15319]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
